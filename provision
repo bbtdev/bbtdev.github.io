@@ -4,6 +4,7 @@ mkdir -p ~/.ssh/
 ssh-keygen -f ~/.ssh/ids_rsa 
 echo "Key copied to clipboard!"
 cat ~/.ssh/ids_rsa.pub | xclip -selection c
+ssh-add ~/.ssh/ids_rsa
 echo "Key should appear here:"
 echo $(ssh-add -l)
 echo "if 'ssh-add .ssh/ids_rsa', in a new terminal add it (e.g. 'ssh-add .ssh/ids_rsa' and make sure it is added: 'ssh-add -l'"
