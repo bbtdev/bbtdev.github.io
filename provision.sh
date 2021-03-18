@@ -1,3 +1,4 @@
+#! /bin/sh
 mkdir -p ~/.ssh/
 ssh-keygen -f ~/.ssh/ids_rsa
 echo "Key copied to clipboard!"
