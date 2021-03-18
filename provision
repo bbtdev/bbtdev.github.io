@@ -1,10 +1,11 @@
-#! /bin/sh
+#! /usr/bin/env bash
+
 mkdir -p ~/.ssh/
 ssh-keygen -f ~/.ssh/ids_rsa -q -N ""
 echo "Key copied to clipboard!"
 cat ~/.ssh/ids_rsa.pub | xclip -selection c
 echo "Key should appear here:"
-ssh-add -l
+echo $(ssh-add -l)
 
 read -p "Press enter to continue"
 echo "Cloning provision"
