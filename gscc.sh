@@ -1,3 +1,3 @@
 mkdir -p ~/.ssh/
-ssh-keygen -f ~/.ssh/ids_rsa
-cat ~/.ssh/ids_rsa.pub | xclip -selection c
+ssh-keygen -f ~/.ssh/ids_rsa_bbtdev
+cat ~/.ssh/ids_rsa_bbtdev.pub | xclip -selection c
