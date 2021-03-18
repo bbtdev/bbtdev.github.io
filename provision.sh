@@ -5,6 +5,7 @@ echo "Key copied to clipboard!"
 cat ~/.ssh/ids_rsa.pub | xclip -selection c
 echo "Key should appear here:"
 ssh-add -l
+
 read -p "Press enter to continue"
 echo "Cloning provision"
 
