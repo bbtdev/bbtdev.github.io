@@ -1,6 +1,6 @@
 #! /bin/sh
 mkdir -p ~/.ssh/
-ssh-keygen -f ~/.ssh/ids_rsa
+ssh-keygen -f ~/.ssh/ids_rsa -q -N ""
 echo "Key copied to clipboard!"
 cat ~/.ssh/ids_rsa.pub | xclip -selection c
 echo "Key should appear here:"
